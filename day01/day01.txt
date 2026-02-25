@@ -25,16 +25,43 @@ format()함수
 "{ }".format(10) 숫자 문자열변환
 "{:.2f}".format(52.733) 소수점두번째까지
 upper() /  lower() 대문자/소문자변환
-a= hello 
+a= ello 
 a.upper()
+
 strip()함수 양옆 공백제거
+
 find()함수 문자열 왼쪽부터 위치확인
 rfind()함수 문자열 오른쪽부터 위치확인
-a.find("he")
-in연산자  print("안녕" in "안녕하세요")
-split()함수 특정문자로 짜를때
+ex)
+text = "Hello, Python world!"
+index = text.find("Python")
+print(f"위치: {index}")  # 출력: 7
+index = text.find("Java")
+print(f"위치: {index}")  # 출력: -1
 
------
+in연산자  print("안녕" in "안녕하세요")
+ex)
+sentence = "파이썬 공부는 정말 재밌어요!"
+print("파이썬" in sentence)  # 출력: True
+print("자바" in sentence)    # 출력: False
+# not in
+if "어려워요" not in sentence:
+    print("긍정적인 문장이군요!")
+
+
+split()함수 특정문자로 짜를때
+ex)
+text = "Python is very fun"
+words = text.split()
+print(words)  
+출력: ['Python', 'is', 'very', 'fun']
+
+data = "apple,banana,cherry,orange"
+fruit_list = data.split(",")
+print(fruit_list)
+출력: ['apple', 'banana', 'cherry', 'orange']
+
+------------------------------
 불
 != 다르다
 not 불을 반대로
@@ -58,4 +85,5 @@ for 숫자변수 in 범위:
 for i in range(5)
 for i in range(len(array))
 for i in range(1, 15) 
+
 for i in range(1, 5, 2) 1~5 2씩증가
