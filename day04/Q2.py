@@ -11,5 +11,5 @@ def make_profile(name, *hobbies) :
         'hobbies' : list(hobbies),  # 오답 : hobbies는 튜플이므로 리스트로 변환
         'count' : len(hobbies)
     }
-    return profile
+    return profile 
 print(make_profile("daeseok", "reading", "swimming", "coding"))
