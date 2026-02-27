@@ -5,3 +5,4 @@
 names = ["  kim", "lee  ", "  park  ", "choi"]
 n1 = [name.strip().upper() for name in names if len(name.strip()) >= 3]
 print(n1)
+ 
