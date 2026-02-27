@@ -8,7 +8,7 @@ with open("memo.txt", "w", encoding="utf-8") as file:
     file.write("2. 공부 열심히 하고 취업준비 열심해서 취업하기\n")
     file.write("3. 일본어 공부하기\n")
 
-print("--- 나의 다짐 목록 ---")
+print("--- 나의 다짐 목록 ---") 
 
 try:
     with open("memo.txt", "r") as file:
